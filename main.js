@@ -114,12 +114,11 @@ function halveAll(numbers) {
 // Note: please write one or two lines here describing your solution.
 
 function values(obj) {
-  var str = []
-  each(obj,function(element,key){
-    str[key]=element
-  })
-return str
+  var res = [];
+  each(obj, function (bob) {
+    res.push(bob);
+  });
+  return res
 }
-
 
 //Good Luck :))
