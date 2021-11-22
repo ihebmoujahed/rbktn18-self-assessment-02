@@ -45,7 +45,9 @@ function map(array, func) {
 // uppercaseAll(strArr); ==> [ 'HELLO', 'WORLD', 'WHIRLED', 'PEAS' ]
 
 function uppercaseAll(arrayOfStrings) {
-  // TODO: your code here
+  return map(arrayOfStrings, function(element){
+    return element.toUpperCase()
+  })
 
 }
 
@@ -78,8 +80,13 @@ var data = [
 // Note: please write one or two lines here describing your solution.
 
 function highestPopulation(arrayOfObjects) {
-  // TODO: your code here
-
+  var res = []
+  return filter(arrayOfObjects, function (element,i){
+    if(element.population >element.population===263991379 ){
+      res.push(element)
+    }
+  })
+return res
 }
 
 //=============================================================================
@@ -93,7 +100,9 @@ function highestPopulation(arrayOfObjects) {
 // Note: please write one or two lines here describing your solution.
 
 function halveAll(numbers) {
-  // your code is here
+  return map(numbers, function(element){
+    return element/2
+  })
 
 }
 
@@ -105,8 +114,11 @@ function halveAll(numbers) {
 // Note: please write one or two lines here describing your solution.
 
 function values(obj) {
-  // your code is here
-
+  var str = []
+  each(obj,function(element,key){
+    str[key]=element
+  })
+return str
 }
 
 
